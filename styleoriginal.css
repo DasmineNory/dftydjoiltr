@@ -1,0 +1,498 @@
+@font-face {
+  font-family: "ComicBookBoldItalic";
+  src: url("./ComicBookBoldItalic.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "ComicBookBoldItalic", sans-serif;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.new-header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.buy-now {
+  font-size: 14px;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buy-now:hover {
+  background-color: #c13c26;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Header Content */
+.header-content {
+  margin-top: 20px;
+}
+
+.main-title {
+  font-size: 80px;
+  font-family: "ComicBookBoldItalic", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  /* text-shadow: 3px 3px 10px rgba(255, 87, 51, 0.8); */
+}
+
+.main-image {
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 50%;
+  /* box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); */
+}
+
+.contract-address {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  margin-top: -10px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.floating-duck img {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 100px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Marquee Styles */
+.marquee-container {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  padding: 10px 0;
+  color: white;
+}
+
+marquee {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  display: block;
+  /* text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.5); */
+}
+
+/*.header-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}*/
+
+/* Tokenomics Styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Text Section */
+.text-section {
+  width: 50%;
+}
+
+.tokonomics-title {
+  font-size: 60px;
+  font-family: "ComicBookBoldItalic", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  /* text-shadow: 3px 3px 10px rgba(255, 87, 51, 0.8); */
+}
+
+.details p {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+  width: 40%;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 300px;
+  height: auto;
+  transform: rotate(-5deg);
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); */
+}
+
+.goomper-text {
+  font-family: "ComicBookBoldItalic", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  writing-mode: vertical-rl;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.4em;
+  line-height: 3;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+body::before {
+  content: "";
+  z-index: -1;
+}
+
+/* About Section Styles */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  border-radius: 10px;
+}
+
+.image-wrapper {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.image-wrapper img {
+  max-width: 300px;
+  height: auto;
+  transform: rotate(-5deg);
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); */
+}
+
+.text-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.buy-nows {
+  padding: 10px 20px;
+  background-color: #a4e8b2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.buy-nows:hover {
+  background-color: #87cf94;
+}
+
+/* Community Section Styles */
+.community {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+  background: linear-gradient(45deg, #1c1c1c, #333);
+  position: relative;
+}
+
+.community h2 {
+  font-size: 150px;
+  font-family: "ComicBookBoldItalic", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+
+.community p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.community-icons {
+  margin-bottom: 20px;
+}
+
+.community-icons a {
+  margin: 0 15px;
+}
+
+.community-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.community-icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.large-cartoon {
+  position: absolute;
+  bottom: -50px;
+  left: -200px;
+  width: 450px;
+}
+
+.medium-cartoon {
+  position: absolute;
+  bottom: 20px;
+  right: -80px;
+  width: 300px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons {
+    top: auto;
+    right: auto;
+    position: static;
+  }
+
+  .main-title {
+    font-size: 60px;
+  }
+
+  .main-image {
+    width: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section,
+  .image-section,
+  .about-section {
+    width: 100%;
+  }
+
+  .tokonomics-title {
+    font-size: 48px;
+  }
+
+  .details p {
+    font-size: 18px;
+  }
+
+  .image-section img {
+    max-width: 200px;
+  }
+
+  .goomper-text {
+    font-size: 15px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-image {
+    width: 150px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .tokonomics-title {
+    font-size: 36px;
+  }
+
+  .details p {
+    font-size: 16px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .image-wrapper img {
+    max-width: 150px;
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .buy-nows {
+    font-size: 0.9rem;
+  }
+
+  .community h2 {
+    font-size: 80px;
+  }
+
+  .community-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    text-align: center;
+  }
+
+  .buy-now {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .social-icons img {
+    width: 20px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-image {
+    width: 100px;
+  }
+
+  .tokonomics-title {
+    font-size: 28px;
+  }
+
+  .details p {
+    font-size: 14px;
+  }
+
+  .about-section {
+    padding: 10px;
+  }
+
+  .text-content p {
+    font-size: 0.8rem;
+  }
+
+  .community h2 {
+    font-size: 60px;
+  }
+
+  .community-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .large-cartoon,
+  .medium-cartoon {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 12px;
+  }
+}
