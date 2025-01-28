@@ -36,17 +36,18 @@ body {
 
 .buy-now {
   font-size: 14px;
-  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
+  background-color: #a4e8b2;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
   cursor: pointer;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .buy-now:hover {
-  background-color: #c13c26;
+  background-color: #87cf94;
 }
 
 .social-icons img {
@@ -76,10 +77,21 @@ body {
 .main-title {
   font-size: 60px;
   font-family: "ComicBookBoldItalic", sans-serif;
-  color: #ffffff;
+  color: white;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   margin: 10px 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .main-image {
@@ -137,7 +149,7 @@ body {
 marquee {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
   margin: 0;
   padding: 0;
   position: relative;
@@ -164,9 +176,21 @@ marquee {
 .tokenomics-title {
   font-size: 60px;
   font-family: "ComicBookBoldItalic", sans-serif;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 20px;
+  animation: pulse 2s infinite;
+  text-shadow: 2px 2px 5px #000;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .details p {
@@ -255,8 +279,19 @@ body::before {
 .text-content h1 {
   font-size: 2rem;
   margin-bottom: 15px;
+  animation: pulse 2s infinite;
+  text-shadow: 2px 2px 5px #000;
 }
 
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
 .text-content p {
   font-size: 1rem;
   line-height: 1.5;
@@ -271,6 +306,7 @@ body::before {
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -292,11 +328,11 @@ body::before {
 .community h2 {
   font-size: 80px;
   font-family: "ComicBookBoldItalic", sans-serif;
-  color: #ffffff;
+  color: white;
   margin-bottom: 20px;
   margin-top: -20px;
-  text-shadow: 2px 2px 5px #000;
   animation: pulse 2s infinite;
+  text-shadow: 2px 2px 5px #000;
 }
 
 @keyframes pulse {
@@ -311,7 +347,7 @@ body::before {
 
 .community p {
   font-size: 20px;
-  color: #ccc;
+  color: white;
   margin-bottom: 30px;
 }
 
@@ -379,7 +415,7 @@ footer {
   text-align: center;
   padding: 20px;
   background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
-  color: #fff;
+  color: white;
   font-size: 14px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -478,6 +514,9 @@ footer p {
   .buy-nows {
     font-size: 0.9rem;
   }
+  .buy-now {
+    font-size: 0.9rem;
+  }
   .community h2 {
     font-size: 50px;
   }
@@ -515,12 +554,14 @@ footer p {
 
   .buy-now {
     width: 100%;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 0.9rem;
+    padding: 16px 35px;
   }
 
   .social-icons img {
-    width: 20px;
+    margin-top: 10px;
+    width: 30px;
+    margin-bottom: -15px;
   }
 
   .main-title {
@@ -528,7 +569,8 @@ footer p {
   }
 
   .main-image {
-    width: 100px;
+    margin-top: -10px;
+    width: 120px;
   }
 
   .floating-duck img {
