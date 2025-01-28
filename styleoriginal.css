@@ -12,7 +12,7 @@ body {
 body {
   margin: 0;
   font-family: "ComicBookBoldItalic", sans-serif;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   color: white;
   box-sizing: border-box;
 }
@@ -21,7 +21,7 @@ body {
 .new-header {
   position: relative;
   text-align: center;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   color: white;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -36,7 +36,7 @@ body {
 
 .buy-now {
   font-size: 14px;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   color: white;
   border: none;
   border-radius: 5px;
@@ -99,6 +99,13 @@ body {
   margin-top: -10px;
   display: inline-block;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contract-address:hover {
+  background-color: rgba(255, 218, 185, 1);
+  transform: scale(1.05); /* Slight zoom-in effect */
 }
 
 .floating-duck img {
@@ -122,7 +129,7 @@ body {
 /* Marquee Styles */
 .marquee-container {
   margin-top: 10px;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   padding: 10px 0;
   color: white;
 }
@@ -144,7 +151,7 @@ marquee {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -154,7 +161,7 @@ marquee {
   width: 50%;
 }
 
-.tokonomics-title {
+.tokenomics-title {
   font-size: 60px;
   font-family: "ComicBookBoldItalic", sans-serif;
   color: #ffffff;
@@ -212,7 +219,7 @@ body::before {
   align-items: center;
   padding: 40px;
   margin: 30px 0;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -221,7 +228,7 @@ body::before {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   border-radius: 10px;
 }
 
@@ -276,9 +283,10 @@ body::before {
   text-align: center;
   padding: 40px 20px;
   margin: 30px 0;
-  background: linear-gradient(45deg, #1c1c1c, #333);
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .community h2 {
@@ -370,10 +378,10 @@ body::before {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
+  background: linear-gradient(45deg, #ffd1a9, #ffc3a0);
   color: #fff;
   font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 footer p {
@@ -412,7 +420,7 @@ footer p {
     width: 100%;
   }
 
-  .tokonomics-title {
+  .tokenomics-title {
     font-size: 48px;
   }
 
@@ -443,7 +451,7 @@ footer p {
     padding: 20px;
   }
 
-  .tokonomics-title {
+  .tokenomics-title {
     font-size: 36px;
   }
 
@@ -523,16 +531,23 @@ footer p {
     width: 100px;
   }
 
+  .floating-duck img {
+    left: -55px;
+  }
   .contract-address {
     font-size: 10px;
   }
 
-  .tokonomics-title {
+  .tokenomics-title {
     font-size: 28px;
   }
 
   .details p {
     font-size: 14px;
+  }
+
+  .image-section {
+    display: none;
   }
 
   .about-section {
@@ -548,12 +563,12 @@ footer p {
   }
 
   .community-icons {
-    gap: 10px;
+    gap: 1px;
   }
 
   .community-icons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .large-cartoon {
