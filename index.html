@@ -9,7 +9,11 @@
   <body>
     <header class="new-header">
       <div class="header-top">
-        <button class="buy-now">BUY NOW</button>
+        <a
+          href="https://pump.fun/7pogQUSfgd3HSpPCGrWVPm5V7FphY5N2XkXScBJYpump"
+          target="_blank">
+          <button class="buy-now">BUY NOW</button>
+        </a>
         <div class="social-icons">
           <a
             href="http://t.me/PostBroke"
@@ -34,7 +38,7 @@
       <div class="header-content">
         <h1 class="main-title">POSTBROKE</h1>
         <img src="./Daffy-Duck_no-bg.png" alt="Daffy Duck" class="main-image" />
-        <div class="contract-address">
+        <div class="contract-address" onclick="copyToClipboard()">
           <p>CA: 7pogQUSfgd3HSpPCGrWVPm5V7FphY5N2XkXScBJYpump</p>
         </div>
       </div>
@@ -52,11 +56,11 @@
 
     <div class="container">
       <div class="text-section">
-        <h1 class="tokonomics-title">TOKONOMICS</h1>
+        <h1 class="tokenomics-title">TOKENOMICS</h1>
         <div class="details">
           <p>LP: BURNED FOREVER</p>
           <p>Tax: 0/0</p>
-          <p>Ticker: $GOOMPER</p>
+          <p>Ticker: $POSTBROKE</p>
           <p>Team: 10%</p>
           <p>Marketing: 10%</p>
         </div>
@@ -70,18 +74,21 @@
     <div class="containers">
       <div class="about-section">
         <div class="image-wrapper">
-          <img src="/Daffy.png" alt="Goomper" />
+          <img src="/Daffy.png" alt="daffy" />
         </div>
         <div class="text-content">
-          <h1>ABOUT $GOOMPER</h1>
+          <h1>ABOUT $POSTBROKE</h1>
           <p>
-            GOOMPER IS THE CHEEKIEST TOKEN ON SOLANA NETWORK, INSPIRED BY MATT
-            FURIE. THE GENIUS BEHIND PEPE, GOOMPER IS THE YOUNG REBELLIOUS
-            COUSIN WHO’S HERE TO BRING CHAOS, FUN AND MASSIVE REWARD TO THE
-            CRYPTO WORLD. REMEMBER “LIFE IS A GAME PLAY EPIC OR PLAY GOOMPER
-            STYLE TO WIN”.
+            Are you sick of being pre-rich? Is the 9-5 getting you down? Seeing
+            everyone's green PnL on twitter making you sad? Nauseated from being
+            a downright LOSER? Well all that ends today. You're here now, which
+            was the hard part. Post-Broke is now LIVE.”.
           </p>
-          <button class="buy-nows">BUY NOW</button>
+          <a
+            href="https://pump.fun/7pogQUSfgd3HSpPCGrWVPm5V7FphY5N2XkXScBJYpump"
+            target="_blank">
+            <button class="buy-nows">BUY NOW</button>
+          </a>
         </div>
       </div>
     </div>
@@ -116,8 +123,29 @@
     </section>
 
     <footer>
-      <p>Designed by Orion Orange 2024 / All Rights Reserved</p>
+      <p>Designed by Orion Origins 2024 / All Rights Reserved</p>
       <p>© POST-BROKE 2024</p>
     </footer>
+
+    <script>
+      function copyToClipboard() {
+        const textToCopy = "7pogQUSfgd3HSpPCGrWVPm5V7FphY5N2XkXScBJYpump";
+
+        // Create a temporary text area to hold the value
+        const tempTextArea = document.createElement("textarea");
+        tempTextArea.value = textToCopy;
+        document.body.appendChild(tempTextArea);
+
+        // Select and copy the text
+        tempTextArea.select();
+        document.execCommand("copy");
+
+        // Remove the temporary element
+        document.body.removeChild(tempTextArea);
+
+        // Show a confirmation (optional)
+        alert("Contract address copied to clipboard!");
+      }
+    </script>
   </body>
 </html>
